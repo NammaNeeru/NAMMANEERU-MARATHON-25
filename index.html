@@ -73,8 +73,10 @@
           padding-top: 30px;
           padding-left: 37%;
         }
-
-      @media (min-width: 320px) and (max-width: 768px)  {
+        #register-btn2{
+          display: none;
+        }
+      @media (min-width: 319px) and (max-width: 768px)  {
         #nav-bar{
           display: flex;
           flex-wrap: wrap;
@@ -128,7 +130,7 @@
         }
         #earlybird{
           position: absolute;
-          top: 170px;
+          top: 120px;
           left: -340px;
           height: 400px;
           width: 300px;
@@ -151,10 +153,34 @@
           height: 400px;
           width: 300px;
         }
-         .left-image{
+         #register-btn{
+          display: none;
 
         }
 
+        #register-btn2{
+          position: absolute;
+          display: inline-block;
+          top: 750px;
+          left: 150px;
+
+        }
+
+      }
+
+
+
+      @keyframes tilt-shaking {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(5deg); }
+      50% { transform: rotate(0eg); }
+      75% { transform: rotate(-5deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    .shake-button {
+        animation: tilt-shaking 0.5s infinite ease-in-out; /* Apply animation permanently */
+        transition: background-color 0.3s ease;
       }
       
       
@@ -234,6 +260,7 @@
                     <div class="col-lg-12">
                       <div class="main-green-button scroll-to-section">
                         <a
+                          id="register-btn"
                           href="https://southindianbank.in/ChristFee/ChristFeeHome"
                           >Register Here</a
                         >
@@ -249,7 +276,7 @@
                   data-wow-delay="0.5s"
                 >
                   <img
-                    src="assets/images/nammaneeru25earlybird.png"
+                    src="assets/images/nammaneeru25earlybird.jpg"
                     alt="save water"
                     class="right-banner"
                     id="earlybird"
@@ -263,7 +290,15 @@
     </div>
 
     <div class="registrtionContainer">
+                        
         <div>
+          <div class="main-green-button scroll-to-section tilt-shaking">
+            <a
+              id="register-btn2"
+              href="https://southindianbank.in/ChristFee/ChristFeeHome"
+              >Register Here</a
+            >
+          </div>
           <img
           src="assets/images/94f0872c-233a-45ee-b1bc-e54b7307692b.webp"
           alt="save water"
@@ -271,6 +306,7 @@
         />
         </div>
   </div>
+
 
     <div id="about" class="about-us section">
       <div class="container">
