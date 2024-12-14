@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      
       rel="stylesheet"
     />
 
@@ -137,7 +138,7 @@
 
         }
         #registrtion{
-          margin-top: 500px;
+          margin-top: 550px;
           height: 400px;
           width: 300px;
           margin-left: 20px;
@@ -162,7 +163,7 @@
           position: absolute;
           display: inline-block;
           top: 750px;
-          left: 150px;
+          left: 20px;
 
         }
 
@@ -182,6 +183,13 @@
         animation: tilt-shaking 0.5s infinite ease-in-out; /* Apply animation permanently */
         transition: background-color 0.3s ease;
       }
+
+    #disclaimer{
+      font-family: 'Open Sans', sans-serif;
+      font-weight: bold;
+      color: red;
+      font-size: 17px;
+    }
       
       
     </style>
@@ -292,12 +300,13 @@
     <div class="registrtionContainer">
                         
         <div>
-          <div class="main-green-button scroll-to-section tilt-shaking">
+          <div id = "register-btn2" class="main-green-button scroll-to-section tilt-shaking">
+            <p id="disclaimer">Read the Process carefully before Registering</p>
             <a
-              id="register-btn2"
               href="https://southindianbank.in/ChristFee/ChristFeeHome"
               >Register Here</a
             >
+            <br>
           </div>
           <img
           src="assets/images/94f0872c-233a-45ee-b1bc-e54b7307692b.webp"
